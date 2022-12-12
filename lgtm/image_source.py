@@ -41,7 +41,7 @@ def ImageSource(keyword):
   elif Path(keyword).exists():
     return LocalImage(keyword)
   else:
-    return KeywordImage()
+    return KeywordImage(keyword)
 
 def get_image(keyword):
   """画像のファイルオブジェクトを返す"""
